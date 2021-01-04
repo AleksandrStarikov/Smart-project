@@ -1,0 +1,81 @@
+// main ../style.less
+
+.process {
+    padding-top: 12.5rem;
+    padding-bottom: 15rem;
+
+    @media @tablet {
+        padding-top: 6rem;
+        padding-bottom: 7rem;
+    }
+
+    @media @mobile-sm {
+        padding-bottom: 2rem;
+      }
+}
+
+.process__inner {
+    display: flex;
+    margin: 11rem -1.5rem 0;
+
+    @media @tablet {
+        margin-top: 5rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    @media @mobile-sm {
+        margin-top: 3rem;
+      }
+}
+
+.process__item {
+    flex-basis: 22.5%;
+    margin: 0 1.4rem 5rem;
+    padding: 5rem 1.5rem 3.2rem;
+
+    color: @white;
+    text-align: center;
+
+    position: relative;
+
+    @media @tablet {
+        flex-basis: 35%;
+    }
+
+    @media @mobile-sm {
+        flex-basis: 60%;
+      }
+}
+
+.process__title {
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-weight: 600;
+    opacity: 0.9;
+}
+
+.bgc-turquoise {
+    background-color: rgb(0, 179, 250);
+}
+
+.bgc-vyolet {
+    background-color: rgb(221, 71, 253);
+}
+
+.bgc-blue {
+    background-color: rgb(131, 127, 255);
+}
+
+.bgc-red {
+    background-color: rgb(255, 69, 114);
+}
+
+.process__text {
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+    padding: 0 1rem;
+    font-size: 1.5rem;
+    letter-spacing: 0.01em;
+    opacity: 0.75;
+}

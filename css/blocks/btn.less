@@ -1,0 +1,126 @@
+// main: ../style.less
+
+.btn {
+    margin-top: 2rem;
+    padding: 1.7rem 1rem 1.7rem 1rem;
+    width: 80%;
+    font-family: inherit;
+    font-size: 1.6rem;
+    color: @white;
+
+    background-color: #ff5c36;
+    border: none;
+    border-radius: 26px;
+
+    & i {
+        margin-left: 12px;
+
+        @media @mobile-sm {
+            display: none;
+        }
+    }
+
+    &:focus {
+        outline: none;
+    }
+
+    &:hover {
+        background-color: #fa4c17;
+    }
+}
+
+.btn-white {
+    display: block;
+    padding: 1.7rem 1rem 1.7rem 1rem;
+    width: 85%;
+    font-family: inherit;
+    font-size: 1.6rem;
+    color: @black;
+    
+
+    background-color: @white;
+    border: none;
+    border-radius: 30px;
+
+    &--work {
+        margin-bottom: -2rem;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+
+        position: absolute;
+        bottom: -5px;
+        left: 50%;
+        z-index: 1;
+
+        transform: translateX(-50%);
+    }
+
+    &--services {
+        width: 24rem;
+        border: 1px solid #ededed;
+
+        @media @mobile-sm {
+            margin: 0 auto;
+          }
+    }
+
+    &--footer {
+        margin: 0 auto;
+        padding: 1.7rem;
+        width: 24rem;
+        border: 1px solid #ededed;
+    }
+
+    &:hover {
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.btn-service {
+    margin-bottom: 1rem;
+    padding: 0;
+    width: 10.4rem;
+    height: 9rem;
+
+    border: 1px solid #e9e9e9;
+    border-radius: 1px;
+    background-color: none;
+
+    cursor: pointer;
+
+    img {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    &:hover {
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2), 0 -5px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    &:focus {
+        outline: none;
+    }
+
+    @media @mobile {
+        width: 8.4rem;
+        height: 7rem;
+    }
+
+    @media @mobile-sm {
+        margin: 0 0.5rem 2rem;
+        width: 6.4rem;
+        height: 5rem;
+    }
+}
+
+.btn-service.active {
+    background: rgba(0, 0, 0, 0.2);
+
+    img {
+        opacity: 0.6;
+    }
+}

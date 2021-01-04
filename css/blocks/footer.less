@@ -1,0 +1,57 @@
+// main: ../style.less
+
+.footer {
+    padding: 4rem 0;
+    background-color: #f7f7f7;
+}
+
+.footer__inner {
+    text-align: center;
+}
+
+.footer__credit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5.3rem;
+
+    @media @mobile-sm {
+        flex-direction: column;
+        margin-top: 3rem;
+      }
+}
+
+.footer__social {
+    display: flex;
+}
+
+.footer__soc-link {
+    display: block;
+    padding: 1rem 0;
+    margin: 0 1rem;
+    width: 5rem;
+    height: 5rem;
+
+    font-size: 2.15rem;
+    color: @white;
+
+    border-radius: 50%;
+    background-color: #d3d3d3;
+
+    &:hover {
+        background-color: @orange;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2), 0 -5px 10px rgba(0, 0, 0, 0.2);
+    }
+}
+
+.footer__copy-right {
+    margin-left: 1.5rem;
+    font-size: 1.7rem;
+    color: @black;
+    opacity: 0.6;
+
+    @media @mobile-sm {
+        margin-top: 2rem;
+        margin-left: 0;
+      }
+}

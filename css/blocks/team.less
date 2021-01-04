@@ -1,0 +1,160 @@
+// main: ../style.less
+
+.team {
+    padding-top: 13rem;
+    padding-bottom: 14.5rem;
+    background-color: #fbfbfb;
+
+    @media @tablet {
+        padding-top: 6rem;
+        padding-bottom: 7rem;
+    }
+
+    @media @mobile-sm {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+      }
+}
+
+.team__inner {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 12.5rem -1.5rem 0;
+
+    @media @tablet {
+        margin-top: 6rem;
+    }
+
+    @media @mobile {
+        flex-direction: column;
+    }
+
+    @media @mobile-sm {
+        margin-top: 3rem;
+      }
+}
+
+.team__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+    padding: 0 1.4rem;
+    width: 33.33333%;
+
+    position: relative;
+
+    @media @mobile {
+        width: 60%;
+        margin: 0 auto 6rem;
+    }
+
+    @media @mobile-sm {
+        width: 80%;
+      }
+}
+
+.team__item:hover .team__photo img {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4), -5px -5px 20px rgba(0, 0, 0, 0.4);
+    border: none;
+    opacity: 0.1;
+}
+
+.team__item:hover .progress__bar {
+    opacity: 1;
+}
+
+.team__photo {
+    background: linear-gradient(to bottom, #fff, #fff3f0);
+    border: 1px solid #d9d9d9;
+
+    img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        transition: opacity .1s linear;
+    }
+}
+
+.team__item:hover .team__photo {
+    border: none;
+}
+
+.team__info {
+    display: block;
+    width: 68%;
+    height: auto;
+    padding: 1.2rem 0 1.5rem;
+    text-align: center;
+
+    background-color: @white;
+    border-radius: 3px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+
+    position: absolute;
+    left: 50%;
+    bottom: -2rem;
+
+    transform: translateX(-50%);
+}
+
+.team__item:hover .team__info {
+    display: none;
+}
+
+.team__name {
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 1.5;
+
+    @media @tablet {
+        font-size: 2.5rem;
+    }
+
+    @media @mobile-sm {
+        font-size: 2rem;
+      }
+
+    &--mt {
+        margin-top: 7rem;
+
+        @media @tablet {
+            margin-top: 3rem;
+        }
+
+        @media @mobile {
+            margin-top: 7rem;
+        }
+
+        @media @mobile-sm {
+            margin-top: 4rem;
+          }
+    }
+}
+
+.team__prof {
+    font-size: 1.6rem;
+    font-weight: 300;
+
+    @media @mobile-sm {
+        font-size: 1.4rem;
+      }
+}
+
+.team__social {
+    margin-top: 1.5rem;
+    font-size: 1.6rem;
+
+    a {
+        margin: 0 0.7rem;
+        color: @white;
+        text-decoration: none;
+    }
+}
+
+.team__item:hover .team__social {
+    a {
+        color: @black;
+    }
+} 
+

@@ -1,0 +1,56 @@
+// main: ../style.less
+
+.works {
+    padding-top: 9.5rem;
+    padding-bottom: 16.5rem;
+    background-color: #fbfbfb;
+
+    @media @tablet {
+        padding-top: 5rem;
+        padding-bottom: 8rem;
+    }
+
+    @media @mobile-sm {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+      }
+
+}
+
+.works__inner {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10rem -1.5rem 0;
+
+    @media @tablet {
+        margin-top: 5rem;
+    }
+
+    @media @mobile-sm {
+        margin-top: 3rem;
+      }
+}
+
+.works__item {
+    display: block;
+    flex-basis: 33.33333%;
+    padding: 1rem 1.5rem;
+
+    overflow: hidden;
+
+    @media @mobile {
+        flex-basis: 50%;
+      }
+
+      @media @mobile-sm {
+        flex-basis: 80%;
+        margin: 0 auto;
+      }
+}
+
+.works__img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+

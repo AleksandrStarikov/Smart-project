@@ -1,0 +1,42 @@
+// main: ../style.less
+
+.logos {
+    padding: 7.8rem 0 9.5rem;
+    background-color: #fbfbfb;
+
+    @media @mobile {
+        padding: 4rem 0 5rem;
+    }
+
+    @media @mobile-sm {
+        padding: 3rem 0;   
+    }
+} 
+
+.logos__inner {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 -1.5rem;
+
+    @media @mobile-sm {
+        justify-content: space-around;
+      }
+}
+
+.logos__item {
+    padding: 0 1.5rem;
+
+    &--none {
+        @media @mobile-sm {
+            display: none;
+          }
+    }
+}
+
+
+
+.logos__img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}

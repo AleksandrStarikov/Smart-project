@@ -1,0 +1,35 @@
+// main: ../style.less
+
+.progress__bar {
+    opacity: 0;
+    text-align: center;
+
+    position: absolute;
+    left: 50%;
+    bottom: 1rem;
+    z-index: 2;
+    transform: translateX(-50%);
+
+    transition: opacity .3s linear;
+}
+
+.progress__bar-title {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    
+}
+
+.progress__bar-bar {
+    margin: 0 auto 1rem;
+    width: 15rem;
+    height: 0.4rem;
+
+    background-color: #817f7e;
+}
+
+.progress__bar-progress {
+    height: 100%;
+    background-color: #ff6e47;
+
+    transition: width .2s linear;
+}
